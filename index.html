@@ -11,6 +11,7 @@ enddate: 2014-07-09
 latlng: 43.659641,-79.396792
 registration: open
 instructor: ["Emily Davenport", "Erika Mudrak", "Dana Bauer"]
+helper: ["Elizabeth Patitsas"]
 contact: admin@software-carpentry.org
 eventbrite: 11725123159
 ---
@@ -49,6 +50,14 @@ eventbrite: 11725123159
 <p>
   <strong>Instructors:</strong>
   {{page.instructor | join: ', ' %}}
+</p>
+{% endif %}
+
+<!-- This block displays the helpers' names if they are available. -->
+{% if page.helper %}
+<p>
+  <strong>Helpers:</strong>
+  {{page.helper | join: ', ' %}}
 </p>
 {% endif %}
 
